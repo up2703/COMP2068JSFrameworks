@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+html(class="no-js" lang="en" dir="ltr")
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='x-ua-compatible', content='ie=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title Urva Patel | Student at georgian
+    link(href="/static/images/favicon.ico", rel="shortcut icon")
+    link(href='https://fonts.googleapis.com/css?family=Nunito:400,600|Roboto:400,700', rel='stylesheet')
+    link(href="https://use.fontawesome.com/releases/v5.5.0/css/all.css", rel="stylesheet", integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU", crossorigin="anonymous")
+    link(rel='stylesheet', href='/static/css/foundation.css')
+    link(rel='stylesheet', href='/static/css/style.css')
+  body
+    #my-info.off-canvas.position-left.reveal-for-large.portfolio-me(data-off-canvas='')
+      .grid-y.grid-padding-x(style='height: 100%;')
+        block sidebar
+          br
+          .cell.shrink 
+            a(href="/") home
+          br
+          .cell.shrink
+            a(href="/project") projects
+          br
+          .cell.shrink
+            a(href="/about") about me
+          br
+          .cell.shrink
+            a(href="/contect") contect me
+    .off-canvas-content(data-off-canvas-content='')
+      .title-bar.hide-for-large
+        .title-bar-left
+          button.menu-icon(type='button', data-toggle='my-info')
+          span.title-bar-title Urva Patel
+      block content   
+  script(src='/static/js/vendor/jquery.js')
+  script(src='/static/js/vendor/what-input.js')
+  script(src='/static/js/vendor/foundation.js')
+  script(src='/static/js/scripts.js')

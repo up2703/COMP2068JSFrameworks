@@ -1,0 +1,48 @@
+extends layout.pug
+
+block content 
+  article.grid-container.portfolio-intro.portfolio-heading
+    div
+      h1 Portfolio
+      p.lead.text-light
+        | Welcome to my portfolio! View more information about each project by clicking on an image. Feel free to get in touch. I would love to hear from you!
+  article.grid-container.portfolio-intro.portfolio-project
+    .grid-x
+      .cell.small-12.medium-9.large-9
+        h1 Urva Patel
+        p.lead.text-light
+          | Student at GeorgianCollage
+        .portfolio-bio
+          p
+            | I am a Student at Georgian Collage in Barrie Ontario. I am learning about Node, Express, SQL, MongoDB, REST APIs, and React.
+          p
+            | While I spend much of my free time learning, I also working as part time in Mucho Burrito as crew member.
+          p
+            | I started learning web development a months years ago.
+          p
+            | My education and experience have prepared me to succeed in a career in front-end development. At my current job, I handled custemer and discuss about user experience and gaining the knowlage about people likes and dislikes.
+      .cell.portfolio-meta.small-12.medium-2.large-3
+        h6 Skills
+        ul.list
+          li JavaScript
+          li jQuery
+          li Express
+          li Git
+          li HTML
+          li CSS
+          li SCSS (Sass)
+          li Bootstrap
+        h6 Contact Info
+        ul.list
+          li urva.patel@gmail.com             
+        ul.social
+          li
+            a(href='https://www.linkedin.com/in/melindamgolden/', target='_blank', aria-label="Linkedin")
+              i.fab.fa-linkedin-in
+          li
+            a(href='https://github.com/mmgolden', target='_blank', aria-label="Github")
+              i.fab.fa-github
+  script(src='/static/js/vendor/jquery.js')
+  script(src='/static/js/vendor/what-input.js')
+  script(src='/static/js/vendor/foundation.js')
+  script(src='/static/js/scripts.js')
